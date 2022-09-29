@@ -22,6 +22,6 @@ func main() {
 		{"화랑", 31}, {"백두산", 52}, {"류", 42},
 		{"켄", 38}, {"송하나", 18}}
 
-	sort.Sort(Students(s)) // ❸ 정렬
+	sort.Sort(Students(s)) // ❸ 정렬-구조체의 Sort메서드를 쓰려면 Len(),Less(),Swap()을 만들어서 정렬기준을 줘야함.
 	fmt.Println(s)
 }
